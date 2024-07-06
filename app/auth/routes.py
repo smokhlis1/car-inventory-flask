@@ -27,7 +27,7 @@ def signup():
             return redirect(url_for('home.profile'))
     except:
         raise Exception('Inavalid form data: Please check your form')
-    return render_template('sign_up.html', form=form)
+    return render_template('signup.html', form=form)
 
 @auth.route('/login', methods = ['GET', 'POST'])
 def login():
